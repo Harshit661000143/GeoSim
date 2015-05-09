@@ -6,10 +6,47 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		BF4059241AFC5F8D00A2EFB8 /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
+		BF4059251AFC5F8D00A2EFB8 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		BF4059261AFC5F8D00A2EFB8 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		BF4059271AFC5F8D00A2EFB8 /* ConfigAccessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigAccessor.cpp; sourceTree = "<group>"; };
+		BF4059281AFC5F8D00A2EFB8 /* ConfigAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigAccessor.h; sourceTree = "<group>"; };
+		BF4059291AFC5F8D00A2EFB8 /* DataCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataCenter.cpp; sourceTree = "<group>"; };
+		BF40592A1AFC5F8D00A2EFB8 /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
+		BF40592B1AFC5F8D00A2EFB8 /* DataCenterProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataCenterProxy.cpp; sourceTree = "<group>"; };
+		BF40592C1AFC5F8D00A2EFB8 /* DataCenterProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenterProxy.h; sourceTree = "<group>"; };
+		BF40592D1AFC5F8D00A2EFB8 /* GoogleTrace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoogleTrace.cpp; sourceTree = "<group>"; };
+		BF40592E1AFC5F8D00A2EFB8 /* GoogleTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleTrace.h; sourceTree = "<group>"; };
+		BF40592F1AFC5F8D00A2EFB8 /* Job.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Job.cpp; sourceTree = "<group>"; };
+		BF4059301AFC5F8D00A2EFB8 /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = "<group>"; };
+		BF4059311AFC5F8D00A2EFB8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BF4059321AFC5F8D00A2EFB8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		BF4059331AFC5F8D00A2EFB8 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		BF4059341AFC5F8D00A2EFB8 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		BF4059191AFC5F7100A2EFB8 = {
 			isa = PBXGroup;
 			children = (
+				BF4059241AFC5F8D00A2EFB8 /* common.cpp */,
+				BF4059251AFC5F8D00A2EFB8 /* common.h */,
+				BF4059261AFC5F8D00A2EFB8 /* config.xml */,
+				BF4059271AFC5F8D00A2EFB8 /* ConfigAccessor.cpp */,
+				BF4059281AFC5F8D00A2EFB8 /* ConfigAccessor.h */,
+				BF4059291AFC5F8D00A2EFB8 /* DataCenter.cpp */,
+				BF40592A1AFC5F8D00A2EFB8 /* DataCenter.h */,
+				BF40592B1AFC5F8D00A2EFB8 /* DataCenterProxy.cpp */,
+				BF40592C1AFC5F8D00A2EFB8 /* DataCenterProxy.h */,
+				BF40592D1AFC5F8D00A2EFB8 /* GoogleTrace.cpp */,
+				BF40592E1AFC5F8D00A2EFB8 /* GoogleTrace.h */,
+				BF40592F1AFC5F8D00A2EFB8 /* Job.cpp */,
+				BF4059301AFC5F8D00A2EFB8 /* Job.h */,
+				BF4059311AFC5F8D00A2EFB8 /* main.cpp */,
+				BF4059321AFC5F8D00A2EFB8 /* Makefile */,
+				BF4059331AFC5F8D00A2EFB8 /* Node.cpp */,
+				BF4059341AFC5F8D00A2EFB8 /* Node.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -23,6 +60,7 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/harshitdokania/Desktop/Final/GeoSim/GeoSim;
 			dependencies = (
 			);
 			name = GeoSim;
