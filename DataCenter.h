@@ -57,6 +57,7 @@ public:
     double          TemperatureNextHours(int hour);
     double          ElectricityNextHours(int hour);
     double 			isAirEco();
+    double          GetUtilization();
 
 private:
 	int 				nDCid;
@@ -66,6 +67,7 @@ private:
 	NodeMap				m_mapNodes; // nodeid-> node map
 	std::mutex          m_waitMutex;
 	std::mutex          m_resourceMutex;
+    std::mutex          m_printMutex;
 	std::list<Job*>  	m_vRunningJobs;
 	std::list<Job*>  	m_vWaitingJobs;
 	GoogleTrace 		m_workLoad;
@@ -96,9 +98,11 @@ private:
     string              name;
     string              m_ExecutionTraces;
     int 				Logfile(string msg);
+    int 				Logfile(double value, string n);
     // speculated cost calculation
-    double 				CalculateDynamicJobCost(DataCenterProxy* proxy,Job *pJob);
-    double 				CalculateCoolingCost(DataCenterProxy* proxy,Job *pJob);
+    double 				CalculateDynamicJobCost(DataCenterProxy* proxy,Job *pJob, string name);
+    double 				CalculateCoolingCost(DataCenterProxy* proxy,Job *pJob, string name);
+    double              CoolLoadBalancer(DataCenterProxy* proxy,Job *pJob, string n);
     //
     void 				UpdateEnergyCost();
     void 				InitStartPoint();

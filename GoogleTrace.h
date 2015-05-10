@@ -18,7 +18,7 @@
 #define JOB_SLA3	  	11
 
 #define YEAR 0
-#define MONTH 1
+#define MONT 1
 #define DAY 2
 #define HOUR 3
 #define DATA 4
@@ -34,8 +34,8 @@ struct TraceItem
 	INT64_ 			nFinishTime;   // job event
 	int			    nSchedClass; // job event, may not need it once SLA is decided
 	int 			nTasks;
-	double			fTotalCPU;
-	double 			fTotalMem;
+    int 			fTotalCPU;
+	int 			fTotalMem;
 	std::string 	sUser;      // job event
 	double 			fSLAParam1; // synthetic
 	double 			fSLAParam2; // synthetic
